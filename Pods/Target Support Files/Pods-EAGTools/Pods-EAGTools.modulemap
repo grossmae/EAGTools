@@ -1,0 +1,6 @@
+framework module Pods_EAGTools {
+  umbrella header "Pods-EAGTools-umbrella.h"
+
+  export *
+  module * { export * }
+}
