@@ -122,12 +122,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 20E192831DB86E7F00F4421E /* Build configuration list for PBXNativeTarget "EAGTools" */;
 			buildPhases = (
-				C6FA738EA143414928FDD328 /* 📦 Check Pods Manifest.lock */,
+				C6FA738EA143414928FDD328 /* [CP] Check Pods Manifest.lock */,
 				20E192761DB86E7F00F4421E /* Sources */,
 				20E192771DB86E7F00F4421E /* Frameworks */,
 				20E192781DB86E7F00F4421E /* Headers */,
 				20E192791DB86E7F00F4421E /* Resources */,
-				DB794FDC692B298D0D07E669 /* 📦 Copy Pods Resources */,
+				DB794FDC692B298D0D07E669 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -182,29 +182,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		C6FA738EA143414928FDD328 /* 📦 Check Pods Manifest.lock */ = {
+		C6FA738EA143414928FDD328 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		DB794FDC692B298D0D07E669 /* 📦 Copy Pods Resources */ = {
+		DB794FDC692B298D0D07E669 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -334,7 +334,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C959E25DC5EFA66CB82E4F96 /* Pods-EAGTools.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
@@ -357,7 +357,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EA4EAD9A18BDA327A222FA48 /* Pods-EAGTools.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
