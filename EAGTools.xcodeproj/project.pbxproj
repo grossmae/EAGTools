@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		20E192801DB86E7F00F4421E /* EAGTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 20E1927E1DB86E7F00F4421E /* EAGTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20E192881DB86F5900F4421E /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E192871DB86F5900F4421E /* Date.swift */; };
+		20E1928C1DB8704400F4421E /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1928B1DB8704400F4421E /* String.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,6 +17,7 @@
 		20E1927E1DB86E7F00F4421E /* EAGTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EAGTools.h; sourceTree = "<group>"; };
 		20E1927F1DB86E7F00F4421E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20E192871DB86F5900F4421E /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		20E1928B1DB8704400F4421E /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		20E192861DB86F4000F4421E /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				20E1928B1DB8704400F4421E /* String.swift */,
 				20E192871DB86F5900F4421E /* Date.swift */,
 			);
 			name = Extensions;
@@ -143,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20E1928C1DB8704400F4421E /* String.swift in Sources */,
 				20E192881DB86F5900F4421E /* Date.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
