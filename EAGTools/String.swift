@@ -9,11 +9,11 @@
 import Foundation
 
 extension String {
-    var localized: String {
+    public var localized: String {
         return NSLocalizedString(self, tableName: nil, bundle: Bundle.main, value: "", comment: "")
     }
     
-    func localized(interpolatedArguments: [CVarArg]) -> String {
+    public func localized(interpolatedArguments: [CVarArg]) -> String {
         return String(format: self.localized, arguments: interpolatedArguments)
     }
 }

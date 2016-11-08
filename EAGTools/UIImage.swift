@@ -10,7 +10,7 @@ import UIKit
 
 extension UIImage {
     
-    convenience init?(locallyNamed name: String) {
+    public convenience init?(locallyNamed name: String) {
         self.init(named: name + "image_postfix".localized)
     }
 }

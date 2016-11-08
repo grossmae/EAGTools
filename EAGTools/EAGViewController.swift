@@ -10,14 +10,14 @@
 import UIKit
 import SnapKit
 
-class EAGViewController: UIViewController {
+public class EAGViewController: UIViewController {
     
     let scrollView = UIScrollView()
     let contentView = UIView()
     let loadingView = UIView()
     let loadingIndicator = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.whiteLarge)
     
-    override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
         
         view.backgroundColor = UIColor.white
@@ -56,23 +56,23 @@ class EAGViewController: UIViewController {
         loadingView.isHidden = true
     }
     
-    override func viewWillAppear(_ animated: Bool) {
+    override public func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
     }
     
-    func setBottomView(bottomView: UIView) {
+    public func setBottomView(bottomView: UIView) {
         contentView.snp.updateConstraints { (make) -> Void in
             make.bottom.equalTo(bottomView)
         }
     }
     
-    func startLoading() {
+    public func startLoading() {
         loadingIndicator.startAnimating()
         view.bringSubview(toFront: loadingView)
         loadingView.isHidden = false
     }
     
-    func stopLoading() {
+    public func stopLoading() {
         loadingView.isHidden = true
         loadingIndicator.stopAnimating()
     }
