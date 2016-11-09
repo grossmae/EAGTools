@@ -10,14 +10,14 @@
 import UIKit
 import SnapKit
 
-public class EAGViewController: UIViewController {
+open class EAGViewController: UIViewController {
     
     let scrollView = UIScrollView()
     let contentView = UIView()
     let loadingView = UIView()
     let loadingIndicator = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.whiteLarge)
     
-    override public func viewDidLoad() {
+    override open func viewDidLoad() {
         super.viewDidLoad()
         
         view.backgroundColor = UIColor.white
@@ -56,7 +56,7 @@ public class EAGViewController: UIViewController {
         loadingView.isHidden = true
     }
     
-    override public func viewWillAppear(_ animated: Bool) {
+    override open func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
     }
     

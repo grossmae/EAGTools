@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "EAGTools"
-  s.version      = "0.1.1"
+  s.version      = "0.1.3"
   s.summary      = "A collection of utilities, extensions, and subclasses I commonly use for Swift iOS projects."
 
   s.description  = <<-DESC
