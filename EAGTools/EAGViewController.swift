@@ -12,8 +12,8 @@ import SnapKit
 
 open class EAGViewController: UIViewController {
     
-    let scrollView = UIScrollView()
-    let contentView = UIView()
+    open let scrollView = UIScrollView()
+    open let contentView = UIView()
     let loadingView = UIView()
     let loadingIndicator = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.whiteLarge)
     
